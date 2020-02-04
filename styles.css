@@ -1,0 +1,482 @@
+@font-face{
+    font-family:pacifico;
+    src:url("fonts/pacifico.ttf");
+}
+
+@font-face{
+    font-family:domine;
+    src:url("fonts/domine.ttf");
+}
+@font-face{
+    font-family:oxygen;
+    src:url("fonts/oxygen.ttf");
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+}
+
+html{   
+    scroll-padding-top: 83px;
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --themeColor: #f77c36;
+}
+.navigation-bar{
+    height:83px;
+    z-index:500;
+    top:0 !important;
+    position:sticky;
+    background-image:linear-gradient(135deg,rgb(220,220,220),rgb(210, 210, 210),rgb(180,180,180),rgb(220,220,220),rgb(210, 210, 210),rgb(180,180,180),rgb(220,220,220),rgb(210, 210, 210),rgb(180,180,180),rgb(220,220,220),rgb(210, 210, 210),rgb(180,180,180));
+}
+
+.navigation-bar #main{
+    display:flex;
+    align-items: center;   
+    justify-content:space-between; 
+    list-style-type: none;
+}
+
+#submenu{
+    transition:.2s ease-in;
+    height:max-content;
+    font-size:18px;
+    width:150px;
+    list-style-type: none;
+    display:block;
+    z-index:4;
+    position:absolute;
+    background:white;
+    padding:1px;
+    margin:2px;
+    margin-left:-1px;
+    border-radius:2px;
+    opacity:0;
+}
+#submenu li{
+    padding:4px;
+    padding-left:6px;
+    transition: .1s ease-in-out;
+}
+#submenu li:hover{
+    background-color: var(--themeColor); 
+    transition: .1s ease-in-out;
+}
+
+.about-us-option{
+    /* background:lightpink; */
+    flex-grow:.5;
+}
+
+.careers-option{
+    /* background:lightgreen; */
+    flex-grow:.51;
+}
+
+.more-option{
+    /* background:lightblue; */
+    
+    flex-grow:.5;
+}
+.theme-option{
+    
+    flex-grow:2.5;
+    /* background-color:orange; */
+}
+
+
+
+#signinButton{
+    background-color:rgb(40, 40, 40);
+    border: none;
+    padding:4px;
+    font-size:22px;
+    margin-right:15px;
+    color:var(--themeColor);
+    font-weight: 700;
+    border-radius: .3vw;
+    box-shadow: 2px 2px .6vw rgb(83, 83, 83);
+    width: 110px;
+}
+
+#signupButton{
+    background-color:rgb(40, 40, 40);
+    border: none;
+    padding:4px;
+    font-size:22px;
+    color:var(--themeColor);
+    font-weight: 700;
+    border-radius: .3vw;
+    box-shadow: 2px 2px .6vw rgb(56, 56, 56);
+    width: 110px;
+    margin-right: 5px;
+}
+
+
+
+#signinButton:hover{
+    background-color:var(--themeColor);
+    color:black;
+    transition:.2s linear;
+}
+
+
+#signupButton:hover{
+    background-color:var(--themeColor);
+    color:black;
+    transition:.2s linear;
+}
+
+
+.carousel .carousel-inner img {
+    height: calc(100vh - 83px);
+    object-fit: cover;
+}
+
+
+/* removing css selectors blue outline from input boxes selected elements */
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+a:link{
+    color:inherit !important ;
+    text-decoration: none !important ;
+}
+a:visited{
+    color:inherit !important;
+    text-decoration: none !important;
+}
+
+/* brand logo */
+#main-logo{
+    width:420px;
+    height: auto;
+}
+
+@media(max-width:900px)
+{
+    #main-logo{
+        width:300px;
+        height: auto;
+    }
+    
+}
+
+
+ /* customizing the scrollbar */
+ ::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color:rgb(63, 63, 63);
+
+}
+
+::-webkit-scrollbar-thumb {
+    width:8px;
+    border-radius:12px;
+    border:4px rgb(16,18,19) solid;
+    background-color:var(--themeColor);
+}
+
+
+
+/* about us section ke liye css */
+.about-us
+{
+    padding:4vw;
+     /* background-color: rgb(46, 46, 46); */
+     background-image: linear-gradient(to bottom right,rgb(63, 63, 63),rgb(29, 29, 29));
+     border-top:2px solid black;
+     height: max-content;
+}
+
+#head-about-us{
+    font-size:2.2vw;
+    color:var(--themeColor);
+    text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+    /* border-top-right-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw; */
+    font-family :pacifico,arial,monospace;
+}
+
+#content-about-us{
+    text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+    font-size:1.75vw;
+    font-family:oxygen;
+    font-weight:500;
+    text-align: justify;
+    color:rgb(255, 255, 255);
+    padding: 1vw 0 0;
+}
+
+@media(max-width:800px)
+{
+    .about-us{
+        padding:3vw;
+    }
+    #head-about-us{
+        text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+        font-size:4vw;
+        color:var(--themeColor);
+        font-family :pacifico,arial,monospace;
+       
+    }
+    #content-about-us{
+        text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+        font-size:3vw;
+        font-family:oxygen;
+        font-weight:500;
+        text-align: justify;
+        color:rgb(255, 255, 255)
+    }
+}
+
+#top-link:link{
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* locate us section ke liye css */
+#locate-us
+{
+     padding:4vw;
+     background-image: linear-gradient(to bottom right,rgb(40,40,40),rgb(29, 29, 29));
+     border-top:2px solid black;
+}
+
+#locate-us-head{
+    font-size:2.2vw;
+    color:var(--themeColor);
+    text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+    /* border-top-right-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw; */
+    font-family :pacifico,arial,monospace;
+}
+
+@media(max-width:800px)
+{
+    #locate-us-head{
+        font-size:4vw;
+        color:var(--themeColor);
+        text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+        font-family :pacifico,arial,monospace;
+    }
+}
+
+/* ends locate us ki css */
+
+
+/* contact us starts here */
+.about-us
+{
+    padding:4vw;
+     /* background-color: rgb(46, 46, 46); */
+     background-image: linear-gradient(to bottom right,rgb(63, 63, 63),rgb(29, 29, 29));
+     border-top:2px solid black;
+     height: max-content;
+}
+
+#head-about-us{
+    font-size:2.2vw;
+    color:var(--themeColor);
+    text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+    /* border-top-right-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw; */
+    font-family :pacifico,arial,monospace;
+}
+
+#content-about-us{
+    text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+    font-size:1.75vw;
+    font-family:oxygen;
+    font-weight:500;
+    text-align: justify;
+    color:rgb(255, 255, 255);
+    padding: 1vw 0 0;
+}
+
+@media(max-width:800px)
+{
+    .about-us{
+        padding:3vw;
+    }
+    #head-about-us{
+        text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+        font-size:4vw;
+        color:var(--themeColor);
+        font-family :pacifico,arial,monospace;
+       
+    }
+    #content-about-us{
+        text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+        font-size:3vw;
+        font-family:oxygen;
+        font-weight:500;
+        text-align: justify;
+        color:rgb(255, 255, 255)
+
+    }
+}
+
+
+
+
+#contact-us{
+    
+    background-image: linear-gradient(to bottom right,rgb(61, 61, 61),rgb(29, 29, 29));
+    border-top:2px solid black;
+    padding:4vw;
+
+}
+#contact-us-head{
+    font-size:2.2vw;
+    color:var(--themeColor);
+    text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+    /* border-top-right-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw; */
+    font-family :pacifico,arial,monospace;
+    margin-bottom:.5vw;
+}
+@media(max-width:800px)
+{
+    #contact-us{
+        
+        background-image: linear-gradient(to bottom right,rgb(61, 61, 61),rgb(29, 29, 29));
+        border-top:2px solid black;
+        padding:4vw;
+    
+    }
+    #contact-us-head{
+        font-size:4vw !important;
+        color:var(--themeColor);
+        text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+        /* border-top-right-radius: 2.5vw;
+        border-bottom-right-radius: 2.5vw; */
+        font-family :pacifico,arial,monospace;
+        margin-bottom:.5vw;
+    }
+}
+
+textarea {
+    
+    font-size: 1.5vw !important;
+    display: flex;
+    overflow:auto;
+    flex-wrap: wrap;
+    color:var(--themeColor);
+    padding:.75vw;
+    padding-bottom:1vw;
+    border-radius:.75vw;
+    background-color:rgb(0,0,0,0);
+    width:25vw;
+    border:.3vw solid var(--themeColor);
+    height: 10vw;
+}
+
+
+::placeholder{
+    font-size:1.5vw;
+}
+
+.box input[type = 'submit'] {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: 900;
+    font-family: arial;
+    color:rgb(0, 0, 0);
+    font-size: 1.75vw;
+    border-radius:4vw;
+    background-color:var(--themeColor);
+    width:max-content;
+    cursor: pointer;
+    padding:.2vw .8vw .3vw;
+    vertical-align: middle;
+    margin-top:1vw;
+    border:none;
+}
+
+
+
+/*customizing the hover action on submit*/
+
+
+.box input[type = 'submit']:hover{
+
+    transition:2s background-color;
+    transition:.2s color;
+    background-color: black;
+    color:var(--themeColor)
+}
+ .box input[type = 'submit']:active{
+    transform:translateY(.2vw);
+    
+ }
+
+
+input:focus, textarea:focus, select:focus, button:focus{
+    outline:none !important ;
+}
+
+.box input[type = 'text'] {
+    margin-bottom:1.2vw;
+    display: flex;
+    flex-wrap: wrap;
+    color:var(--themeColor);
+    font-size: 1.5vw;
+    padding:.75vw;
+    padding-bottom:1vw;
+    border-radius:.75vw;
+    background-color:rgb(0,0,0,0);
+    width:25vw;
+    border:.3vw solid var(--themeColor);
+}
+
+input[type=color]
+{
+    background:none;
+    cursor: pointer;
+    border:none; 
+    width: 15px;
+    height:15px;
+    vertical-align: middle;
+    margin-left: 7px;
+    margin-bottom:5px;
+}
+
+#dd-arrow {
+    fill: var(--themeColor) !important;
+    cursor:pointer;
+    stroke: black;
+    transition:.2s linear;
+}
+
+#dd-arrow:hover{
+    filter:drop-shadow(0 0 35px var(--themeColor)); 
+}
+
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;}
+
+
+
+input[type="color"]::-webkit-color-swatch {
+    border: 1px solid black;
+    border-radius:50%;
+
+}
+
+#divider{
+    height:.5px;
+    border:.5px solid rgb(201, 201, 201);
+    margin:-1px;
+}

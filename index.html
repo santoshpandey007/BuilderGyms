@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <title>Builder Gyms</title>
+</head>
+<body>  
+
+<!-- custom navigation bar made with flex. -->
+            <nav class="navigation-bar">
+              <ul id = 'main'>
+                <li> <img id=main-logo src="images/brand.png"> </li>
+                <li style=" font-family: pacifico;font-size:24px" class="about-us-option">
+                  <a href="#head-about-us" - 83px> About Us?</a>
+                </li>
+                <li style=" font-family: pacifico;font-size:24px" class="careers-option">
+                  <a href="https://bit.us4.list-manage.com/subscribe/post?u=f4993888e18fc83d29d1b1cb9&amp;id=96efcae628">Careers</a>
+                </li>
+                <li style=" font-family: pacifico;font-size:24px" class="more-option">
+                  More <svg height="10" width="15" id='dd-arrow' onclick="dropdown()"> <polygon points="0,0 15,0 7.5,10"/></svg>
+                  <ul id = 'submenu'>
+                    <li><a href="#locate-us-head">Locate Us</a></li>
+                    <hr id=divider>
+                    <li><a href="#contact-us-head">Contact Us</a></li>
+                  </ul>
+                </li>
+                <li style=" font-family: pacifico;font-size:24px" class="theme-option" >
+                  Theme<input type="color" value=#f77c36 onchange="themeChange()" id="theTheme"></input>
+                </li>
+                <li><a href="signin.html"><button id='signinButton'>SIGN IN</button> </a></li>
+                <li> <a href="signup.html"><button id='signupButton'>SIGN UP</button> </a></li>
+              </ul>
+            </nav>
+<!-- and here the navigation bar ends -->
+
+      <div class="big-container">
+      <!-- carousel starts here -->
+      <div id="demo" class="carousel slide"  data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="images/carousel/1.jpg" width="100%" height=100%>
+            <div class="carousel-caption">
+              <p style="font-weight: 500;font-size: 18px;text-shadow:0 0 .5vw black;">
+               Trainers for all kinds of fitness goals and age-groups.
+              </p>
+            </div>
+              
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel/2.jpg" width="100%" height=100%>
+            <div class="carousel-caption">
+                <p style="font-weight: 500;font-size: 18px;text-shadow:0 0 .5vw black;">
+                Gyms at heights where oxygen levels are lower, to get the best out of you.
+                </p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel/3.jpg" width="100%" height=100% >
+            <div class="carousel-caption">
+                <p style="font-weight: 500;font-size: 18px;text-shadow:0 0 .5vw black;">
+               Sufficient amount of equipments for even 200+ people working out simultaneously.   
+                </p>
+            </div>
+        </div>
+            
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <!-- carousel ends here -->
+      
+      <!-- About us starts here -->
+      <div class=about-us>
+          <div id="head-about-us">
+            About Us
+          </div>
+          <div id="content-about-us">
+              Builder Gyms Pvt. Ltd. is a chain of gyms spreaded around in the city of Bangalore.<br>We started our first gym in 1999 in the heart of Bengaluru at Hebbal. Since then there was no looking back. We have one of the largest chain of Gymnasiums in the world. The number of gymnasiums we own in Bengaluru is well above 65. The average number of customers we can accomodate at any of our gymnasium goes upto 232. Some of our gyms are built at greater heights in order to decrease the oxygen levels inside the gym, so the people can get the best out of their body and burn the fat faster. 
+          </div>
+      </div> 
+      <!-- about us ended -->
+
+
+      <!-- locate us starts -->
+      <div id=locate-us>
+        <div id=locate-us-head>
+          Locate Us Here
+        </div>
+        <div id=map>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62220.09797456395!2d77.51830897570456!3d12.923389947992948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e318c72014f%3A0x38fcf0c1f803b3a7!2sCULT!5e0!3m2!1sen!2sin!4v1579770113434!5m2!1sen!2sin" width="100%" height="500" style="border-radius:1vw;border:7px rgb(199, 199, 199) double; margin-top:1vw" allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <!-- locate us ends here -->
+ 
+      <!-- contact us starts here -->
+      <div id=contact-us>
+        <div id=contact-us-head>
+          Contact Us
+        </div>
+        <div id=connect-us>
+          <table id=forms width=max-content align="CENTER">
+            <tr>
+                <td>
+                  <form class='box' id=signup-box action="mailto:pansantos111999@gmail.com" method='post'>
+                    <input type='text' placeholder='Name (e.g. Utkarsh Sharma)' name='cname' required pattern="[a-zA-Z\s.]+"  title='Enter a valid name!'/>
+                    <input type='text' placeholder='Email (e.g. abcd@example.com)' name='cemail' required pattern="^[a-zA-Z][a-zA-Z0-9._]+@[a-zA-Z0-9.]+\.[a-zA-Z]{2,4}$" title=''/>    
+                    <textarea placeholder="Write a message" style="font-size: 1.2vw;" wrap="soft"></textarea>
+                    <input type='submit' value='CONTACT' class='thebutton'/>
+                     
+              </form>
+                </td>
+            </tr>
+  
+        </table>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+
+<script>
+document.getElementById("submenu").addEventListener("focusout", myFunction);
+function myFunction() {
+document.getElementById("submenu").style.opacity=0;
+document.getElementById('dd-arrow').style.transform="rotate(360deg)";
+}
+</script>
+<script src="script.js"> </script>
+</body>
+</html>
+
+
+
