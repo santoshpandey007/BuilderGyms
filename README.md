@@ -1,3 +1,2 @@
 # BuilderGyms
-A simple yet engaging frontend design to bring a Gym online.
-\n bit.ly/builderGyms
+A simple yet engaging frontend design to bring a Gym online. http://www.bit.ly/builderGyms
